@@ -1,398 +1,146 @@
-DCP,Desjardins CDN Pref Share ETF
-DBO,Dbox Technologies Inc
-DGS,Dividend Growth Split Corp Class A
-DOO,Brp Inc
-DND,Dye & Durham Ltd
-DSG,Descartes Sys
-DXC,Dyn Ishares Active CDN Div ETF
-DXG,Dyn Ishares Active Global Div ETF
-DFE,Desjardins EM Multifactor-Controlled Vol
-DIV,Diversified Royalty Corp
-DXF,Dynamic Ishares Act Global Fin Ser ETF
-DS,Dividend Select 15 Corp
-DXB,Dynamic Ishares Act Tactical Bond ETF
-ABT,Absolute Software Corp
-AEZS,Aeterna Zentaris Inc
-AC,Air Canada
-AIM,Aimia Inc
-AGI,Alamos Gold Inc Cls A
-AND,Andlauer Healthcare Group Inc
-ARE,Aecon Group Inc
-AR,Argonaut Gold Inc
-AT,Acuityads Holdings Inc
-ASM,Avino Silver and Gold Mines Ltd
-ATH,Athabasca Oil Corp
-ACB,Aurora Cannabis Inc
-AEM,Agnico Eagle Mines Limited
-AHC,Apollo Healthcare Corp.
-AI,Atrium Mortgage Investment Corp
-AJX,Agjunction Inc
-ALC,Algoma Central
-ALB,Allbanc Split Banc Corp II
-APY,Anglo Pacific Group Plc
-APHA,Aphria Inc
-ARB,Accelerate Arbitrage Fund ETF
-AUG,Auryn Resources Inc
-AZZ,Azarga Uranium Corp
-GAU,Galiano Gold Inc
-AXU,Alexco Resource Corp
-GBT,Bmtc Group Inc
-GDI,Gdi Integrated Facility Services Inc
-GDV,Global Dividend Growth Split Corp
-GFL,Gfl Environmental Inc
-GIL,Gildan Activewear Inc
-GLO,Global Atomic Corp
-GEO,Geodrill Limited
-GOOS,Canada Goose Holdings Inc
-GSY,Goeasy Ltd
-GMO,General Moly Inc
-GWO,Great-West Lifeco Inc
-GRC,Gold Springs Resource Corp
-GWR,Global Water Resources Inc
-GDL,Goodfellow Inc
-GLG,Glg Life Tech Corp
-GOLD,Goldmining Inc
-GSV,Gold Standard Ventures Corp
-GTE,Gran Tierra Energy Inc
-CARS,Evolve Automobile Innovation Idx Hgd ETF
-CDAY,Ceridian Hcm Holdings Inc
-CBH,Ishares 1-10 Yr Laddered Corp Bond ETF
-CCO,Cameco Corp
-CF,Canaccord Genuity Group Inc
-CFX,Canfor Pulp Products Inc
-CGLO,CIBC Global Growth ETF
-CHW,Chesswood Group Limited
-CIGI,Colliers International Group Inc
-CIX,CI Financial Corp
-CLR,Clearwater Seafoods Incorporated
-CM,Canadian Imperial Bank of Commerce
-CMR,Ishares Premium Money Market ETF
-CMG,Computer Modelling Group Ltd
-COMM,BMO Global Communications Index ETF
-COW,Ishares Global Agri Index ETF
-CRED,CI Lawrence Park Alt Invest Grd Crdt ETF
-CSD,Ishares Short Dur HI Inc ETF CAD Hgd
-CRH,CRH Medical Corp
-CS,Capstone Mining Corp
-CAE,Cae Inc
-CBO,Ishares 1-5Yr Laddered Corp Bond ETF
-CEE,Centamin Plc
-CCM,Canarc Res J
-CEW,Ishares Equal Weight Banc Lifeco ETF
-CG,Centerra Gold Inc
-CET,Cathedral Energy Services Ltd
-CGRA,CI Global Real Asset Private Pool ETF
-CIA,Champion Iron Limited
-CINF,CI Global Infrastructure Pvt Pool ETF
-CLF,Ishares 1-5 Yr Ladder Govt Bond ETF
-CLS,Celestica Inc Sv
-CNQ,CDN Natural Res
-CORP,Exemplar Investment Grade Fund
-CPI,Condor Petroleum Inc
-CP,Canadian Pacific Railway Limited
-COG,Condor Gold Plc
-CPG,Crescent Point Energy Corp
-CR,Crew Energy Inc
-CRON,Cronos Group Inc
-CSM,Clearstream Energy Services Inc
-CVE,Cenovus Energy Inc
-CWB,CDN Western Bank
-CYH,Ishares Global Monthly Dividend ETF
-CYB,Cymbria Corporation Cl A
-FAF,Fire & Flower Holdings Corp.
-FC,Firm Capital Mortgage Inv. Corp
-FHB,CI First Asset European Bank ETF
-FOUR,Horizons Industry 4.0 Index ETF
-FN,First National Financial Corp
-FT,Fortune Mnrl J
-FVL,Freegold Ventures Limited
-FCUV,Fidelity US Value Index ETF
-FF,First Mining Gold Corp
-FGB,CI First Asset Shrt Term Govt Bond Indx
-FHI,CI First Asset Hlth Care Giants Cov Call
-FLOT,Purpose Floating Rate Income Fund ETF
-FM,First Quantum Minerals Ltd
-FLDM,Franklin Libertyqt Intl Eqt Index ETF
-FNV,Franco-Nevada Corp
-FR,First Majestic Silver Corp Common
-FSV,Firstservice Corp
-FSZ,Fiera Capital Corp
-FTS,Fortis Inc
-FXC,Fax Capital Corp
-FUD.A,First Trust Value Line Div Idx ETF AC
-ECO,Ecosynthetix Inc
-E,Enterprise Group Inc
-EFX,Enerflex Ltd
-EQL,Invesco S&P 500 Eql Weight Idx ETF
-ERF,Enerplus Corp
-ESG,Invesco S&P 500 ESG Index ETF
-ESGE,BMO MSCI EAFE ESG Leaders Index ETF
-ESGG,BMO MSCI Global ESG Leaders Index ETF
-ETG,Entree Resources Ltd
-ESGA,BMO MSCI Canada ESG Leaders Index ETF
-ETX,Etrion Corp
-ESI,Ensign Energy Services Inc
-EDGE,Evolve Innovation Index ETF
-EARN,Evolve Active Global Fixed Income ETF
-EDV,Endeavour Mining Corp
-EFL,Electrovaya Inc
-EFR,Energy Fuels Inc
-ELD,Eldorado Gold
-ELF,E-L Financial
-EGIF,Exemplar Growth and Income Fund ETF
-ELR,Eastern Platinum Limited
-ENB,Enbridge Inc
-ENS,E Split Corp
-ENGH,Enghouse Systems Limited
-ERO,Ero Copper Corp
-EOX,Euromax Resources Ltd
-EQX,Equinox Gold Corp
-EUR,First Trust Alphadex Euro Div ETF
-ICE,Canlan ICE Sports Corp
-IGLB,IA Clarington Global Bond Fund
-III,Imperial Metals Corp
-IPO,Inplay Oil Corp
-ITP,Intertape Polymer
-IPCI,Intellipharmaceutics International Inc
-IAG,Industrial Alliance Ins & Fin Srv Inc
-IGM,Igm Financial Inc
-IMO,Imperial Oil
-IMV,Imv Inc.
-BB,Blackberry Limited
-BCE,BCE Inc
-BCI,New Look Vision Group Inc
-BHC,Bausch Health Companies Inc
-BFIN,Brompton Na Financials Dividend ETF
-BLX,Boralex Inc
-BND,Purpose Tactical Inv Grade Bond ETF
-BOS,Airboss America J
-BR,Big Rock Brewery Inc
-BSX,Belo Sun Mining Corp
-BUI,Buhler Ind
-BRY,Bri Chem Corp
-BTE,Baytex Energy Corp
-BEPC,Brookfield Renewable Corporation
-BIPC,Brookfield Infrastructure Corporation
-BK,Canadian Banc Corp
-BKI,Black Iron Inc
-BLU,Bellus Health Inc
-BLCK,First Trust Indxx Innov Trans Proc ETF
-BMO,Bank of Montreal
-BNS,Bank of Nova Scotia
-BTO,B2Gold Corp
-BSC,Bns Split Corp II
-H,Hydro One Limited
-BYD,Boyd Group Services Inc
-HAL,Horizons Active CDN Dividend ETF
-HBM,Hudbay Minerals Inc
-HBU,Betapro Gold Bullion 2X Daily Bull ETF
-HDGE,Accelerate Absolute Return Hdg Fund ETF
-HEP,Horizons Enhanced Income Gold Prod ETF
-HE,Hanwei Energy Services Corp
-HIG,Brompton Global Healthcare Inc & Gth ETF
-HIX,Betapro S&P TSX 60 Daily Inverse ETF
-HTA,Harvest Tech Achievers Growth & Income
-HBB,Horizons CDN Select Universe Bond ETF
-HBP,Helix Biopharm
-HCA,Hamilton Canadian Bank Mean Reversion
-HEXO,Hexo Corp
-HERO,Evolve E Gaming Index ETF
-HLF,High Liner
-HPF,Harvest Energy Leaders Plus Income ETF
-HOG,Horizons CDN Midstream Oil Gas ETF
-HPR,Horizons Active Pref Share ETF
-HRAA,Horizons Resolve Adptv Asset Alloc ETF
-HTH,Horizons US 7 10 Yr Treas Bd CAD Heg ETF
-HUM,Hamilton U.S. Mid/Small-Cap Financials E
-HUN,Horizons Natural Gas ETF
-HYI,Horizons Active High Yield Bond ETF
-JAG,Jaguar Mining Inc
-JE,Just Energy Group Inc
-KEY,Keyera Corp
-K,Kinross Gold Corp
-KL,Kirkland Lake Gold Ltd
-L,Loblaw CO
-LABS,Medipharm Labs Corp
-LB,Laurentian Bank
-LN,Loncor Resources Inc
-LSPD,Lightspeed Pos Inc
-LAC,Lithium Americas Corp
-LEAD,Evolve Future Leadership ETF Hedged
-LIFE,Evolve Global Healthcare Enhance Yld ETF
-QTRH,Quarterhill Inc
-QEM,Quantshrs Enh Core Emg Mkt Eqt ETF
-QSR,Restaurant Brands International Inc
-QUS,Quantshrs Enh Core US Equity ETF
-MAXR,Maxar Technologies Inc
-MCB,Mccoy Global Inc
-MIN,Excelsior Mining Corp
-MG,Magna International Inc
-MKC,Mackenzie Max Dvrs Cda Index ETF
-MINT,Manulife Mltfactor Dev Intl Hgd ETF
-MPC,Madison Pac Cl B
-MSI,Morneau Shepell Inc
-MTL,Mullen Group Ltd
-MX,Methanex Corp
-MUS,Mackenzie Max Dvrs US Index ETF
-MAV,Mav Beauty Brands Inc
-MUX,Mcewen Mining Inc
-MEG,Meg Energy Corp
-MFC,Manulife Fin
-MDNA,Medicenna Therapeutics Corp
-MFT,Mackenzie Floating Rate Income ETF
-MGA,Mega Uranium Ltd
-MIND,Horizons Active Ai Global Equity ETF
-MPVD,Mountain Province Diamonds Inc
-MOGO,Mogo Inc
-MUB,Mackenzie Unconstrained Bond ETF
-NEO,NEO Performance Materials Inc
-NAC.V,Nextpoint Acquisition Corp USD
-NEXA,Nexa Resources S.A.
-NML,New Millennium Iron Corp
-NPK,Verde Agritech Plc
-NTR,Nutrien Ltd
-NVCN,Neovasc Inc
-NXJ,Nexj Systems Inc
-NEPT,Neptune Wellness Solutions Inc
-NEXT,Nextsource Materials Inc
-NGD,New Gold Inc
-NUAG,New Pacific Metals Corp
-NXE,Nexgen Energy Ltd
-OMI,Orosur Mining Inc
-OBE,Obsidian Energy Ltd
-ONEQ,CI One Global Equity ETF
-OR,Osisko Gold Royalties Ltd
-OTEX,Open Text Corp
-OGI,Organigram Holdings Inc
-ORA,Aura Minerals Inc
-OSB,Norbord Inc
-OVV,Ovintiv Inc
-RBA,Ritchie Bros Auctioneers Inc
-REAL,Real Matters Inc
-RFP,Resolute Forest Products Inc
-RIV,Canopy Rivers Inc
-RQI,RBC Target 2021 Corp Bond Index ETF
-RUBY,RBC US Banks Yield Index ETF CAD
-RXD,RBC Quant Emrg Mkts Div Leaders ETF
-RWW,CI First Asset MSCI World Low Risk Wtd
-RY,Royal Bank of Canada
-RWX,CI First Asset MSCI Intl Low Risk
-RCD,RBC Quant CDN Dividend Leaders ETF
-RIG,RBC Quant Global Infras Leaders ETF
-RPD,RBC Quant European Div Leaders ETF
-PAAS,Pan American Silver Corp
-PBH,Premium Brands Holdings Corp
-PD,Precision Drilling Corp
-PFL,Powershares 1 To 3 Yr Lad Float Rate ETF
-PHYS,Sprott Physical Gold Trust CAD
-PHO,Photon Control Inc
-PID,Purpose Intl Dividend Fund ETF
-PKI,Parkland Fuel Corp
-PLC,Park Lawn Corp
-PINC,Purpose Multi Asset Income Fund
-PMTS,CPI Card Group Inc
-PMM,Purpose Multi Strategy Mkt Neutral Fund
-PPR,Prairie Provident Resources Inc
-PRN,Profound Medical Corp
-PREF,Evolve Dvdnd Stblt Prf Sh Indx E
-PSI,Pason Systems Inc
-PSB,Invesco 1 To 5 Yrladder Inv Grd Bd ETF
-PVG,Pretium Resources Inc
-PTM,Platinum Group Metals Ltd
-PBD,Purpose Total Return Bond Fund ETF
-PZA,Pizza Pizza Royalty Corp
-PBI,Purpose Best Ideas Fund ETF
-PEY,Peyto Exploration and Dvlpmnt Corp
-PDIV,Purpose Enhanced Dividend Fund ETF
-PFMS,Picton Mahoney Multi Strat Alt Fund ETF
-PHX,Phx Energy Services Corp
-PIN,Purpose Monthly Income Fund ETF
-PMT,Perpetual Energy Inc
-PME,Sentry Select Primary Metals Corp
-PRA,Purpose Diversified Real Asset Fund ETF
-PSA,Purpose High Interest Savings ETF
-PRU,Perseus Mining Limited
-PRMW,Primo Water Corporation
-PXS,Pwrshr FTSE RAFI US Fdamntl ETF II
-VB,Versabank
-PZC,Pwrshr FTSE RAFI CDN Sml Mid Fdamntl ETF
-VET,Vermilion Energy Inc
-VIVO,Vivo Cannabis Inc
-VFF,Village Farms International Inc
-VGZ,Vista Gold Corp
-VMO,Vanguard Glob Momentum Factor ETF
-U,Uranium Participation CO
-UFS,Domtar Corp
-USA,Americas Silver Corp
-USB,Powershares Lad US 0 To 5 Yr Corp Bd ETF
-WELL,Well Health Technologies Corp
-WOMN,BMO Women IN Leadership Fund
-WCN,Waste Connections Inc
-WFC,Wall Financial
-T,Telus Corp
-WPRT,Westport Fuel Systems Inc
-TLF,Brompton Tech Leaders Income ETF
-TOCA,TD One Click Aggressive Portfolio ETF
-TSU,Trisura Group Ltd
-TXF,CI First Asset Tech Giants Covered Call
-TXG,Torex Gold Resources Inc
-TA,Transalta Corp
-TD,Toronto-Dominion Bank
-TCS,Tecsys Inc J
-TFII,Tfi International Inc
-TH,Theratechnologies
-TLO,Talon Metals Corp
-TMQ,Trilogy Metals Inc
-TNP,Transatlantic Petroleum Ltd
-TPAY,TD Income Builder ETF
-TRIL,Trillium Therapeutics Inc
-TRP,Tc Energy Corp
-TRI,Thomson Reuters Corp
-TRQ,Turquoise Hill Resources Ltd
-TTP,TD S&P TSX Capped Comp Index ETF
-TVE,Tamarack Valley Energy Ltd
-TV,Trevali Mining Corp
-S,Sherritt Intl Rv
-SAM,Starcore International Mines Ltd
-SBI,Serabi Gold Plc
-SBT,Purpose Silver Bullion ETF
-SCL,Shawcor Ltd
-SCU,The Second Cup Ltd
-SEA,Seabridge Gold Inc
-SES,Secure Energy Services Inc
-SIS,Savaria Corp
-SIL,Silvercrest Metals Inc
-SFIX,Scotia Strategic Fixed Inc ETF Portfolio
-SLF,Sun Life Financial Inc
-SMC,Sulliden Mining Capital Inc
-SPB,Superior Plus Corp
-STLC,Stelco Holdings Inc
-STEP,Step Energy Services Ltd
-SWP,Swiss Water Decaffeinated Coffee Inc
-SUSA,Scotia Strategic US Eqty ETF Portfolio
-SVM,Silvercorp Metals Inc
-SBB,Sabina Gold and Silver Corp
-SID,CI First Asset US Trendleaders ETF
-SHOP,Shopify Inc
-SII,Sprott Inc
-SINT,Scotia Strategic Intl Eqty ETF Portfolio
-SJ,Stella Jones Inc
-SOP,Soperior Fertilizer Corp
-SPPP,Sprott Physical Platinum Palladium CAD
-STN,Stantec Inc
-SSL,Sandstorm Gold Ltd
-SSRM,Ssr Mining Inc
-SXI,Synex Intl J
-SYLD,Purpose Strategic Yield Fund
-SU,Suncor Energy Inc
-X,Tmx Group Limited
-XFI,Ishares Edge MSCI Multifact EAFE ETF
-XHB,Ishares CDN Hybrid Corp Bond ETF
-XIN,Ishares MSCI EAFE Index ETF
-XIT,Ishares S&P TSX Capped Info Tech ETF
-XID,Ishares India Index ETF
-XLB,Ishares Core CDN Long Term Bond ETF
-XEC,Ishares Core MSCI Emerging Mkts IMI ETF
-Y,Yellow Pages Limited
-ZBK,BMO Equal Weight US Bank ETF
-ZSML,BMO SP US Small Cap Index ETF
+,symbol,name
+1,GAU,Galiano Gold Inc
+2,GDV,Global Dividend Growth Split Corp
+4,GEO,Geodrill Limited
+6,GIL,Gildan Activewear Inc
+7,GMO,General Moly Inc
+8,GLO,Global Atomic Corp
+14,GDL,Goodfellow Inc
+16,GLG,Glg Life Tech Corp
+17,GSV,Gold Standard Ventures Corp
+18,GTE,Gran Tierra Energy Inc
+19,BB,Blackberry Limited
+22,BFIN,Brompton Na Financials Dividend ETF
+23,BHC,Bausch Health Companies Inc
+24,BLX,Boralex Inc
+26,BOS,Airboss America J
+29,BRY,Bri Chem Corp
+30,BTE,Baytex Energy Corp
+36,BLCK,First Trust Indxx Innov Trans Proc ETF
+37,BLU,Bellus Health Inc
+43,DBO,Dbox Technologies Inc
+44,DCP,Desjardins CDN Pref Share ETF
+50,DXC,Dyn Ishares Active CDN Div ETF
+52,DIV,Diversified Royalty Corp
+54,DS,Dividend Select 15 Corp
+55,DXF,Dynamic Ishares Act Global Fin Ser ETF
+58,AEZS,Aeterna Zentaris Inc
+59,AGI,Alamos Gold Inc Cls A
+60,AIM,Aimia Inc
+61,AND,Andlauer Healthcare Group Inc
+62,AR,Argonaut Gold Inc
+64,ASM,Avino Silver and Gold Mines Ltd
+65,AT,Acuityads Holdings Inc
+67,ACB,Aurora Cannabis Inc
+69,AHC,Apollo Healthcare Corp.
+70,AI,Atrium Mortgage Investment Corp
+71,AJX,Agjunction Inc
+74,APHA,Aphria Inc
+75,APY,Anglo Pacific Group Plc
+77,AUG,Auryn Resources Inc
+78,AXU,Alexco Resource Corp
+81,HAL,Horizons Active CDN Dividend ETF
+83,HBM,Hudbay Minerals Inc
+84,HDGE,Accelerate Absolute Return Hdg Fund ETF
+86,HEP,Horizons Enhanced Income Gold Prod ETF
+88,HIX,Betapro S&P TSX 60 Daily Inverse ETF
+91,HBP,Helix Biopharm
+94,HEXO,Hexo Corp
+97,HPF,Harvest Energy Leaders Plus Income ETF
+98,HRAA,Horizons Resolve Adptv Asset Alloc ETF
+99,HPR,Horizons Active Pref Share ETF
+100,HTH,Horizons US 7 10 Yr Treas Bd CAD Heg ETF
+103,HYI,Horizons Active High Yield Bond ETF
+104,E,Enterprise Group Inc
+108,ERF,Enerplus Corp
+113,ESI,Ensign Energy Services Inc
+114,ETG,Entree Resources Ltd
+116,EARN,Evolve Active Global Fixed Income ETF
+117,EDGE,Evolve Innovation Index ETF
+119,EFL,Electrovaya Inc
+120,EFR,Energy Fuels Inc
+121,EGIF,Exemplar Growth and Income Fund ETF
+122,ELF,E-L Financial
+128,EOX,Euromax Resources Ltd
+131,EQX,Equinox Gold Corp
+132,CARS,Evolve Automobile Innovation Idx Hgd ETF
+133,CBH,Ishares 1-10 Yr Laddered Corp Bond ETF
+134,CCO,Cameco Corp
+138,CGLO,CIBC Global Growth ETF
+139,CHW,Chesswood Group Limited
+141,CIX,CI Financial Corp
+143,CLR,Clearwater Seafoods Incorporated
+147,COMM,BMO Global Communications Index ETF
+151,CS,Capstone Mining Corp
+152,CAE,Cae Inc
+153,CBO,Ishares 1-5Yr Laddered Corp Bond ETF
+154,CCM,Canarc Res J
+156,CEW,Ishares Equal Weight Banc Lifeco ETF
+159,CGRA,CI Global Real Asset Private Pool ETF
+160,CIA,Champion Iron Limited
+162,CLS,Celestica Inc Sv
+163,CLF,Ishares 1-5 Yr Ladder Govt Bond ETF
+164,CNQ,CDN Natural Res
+165,COG,Condor Gold Plc
+168,CPG,Crescent Point Energy Corp
+170,CRON,Cronos Group Inc
+173,CVE,Cenovus Energy Inc
+176,CYH,Ishares Global Monthly Dividend ETF
+177,FC,Firm Capital Mortgage Inv. Corp
+179,FHB,CI First Asset European Bank ETF
+182,FT,Fortune Mnrl J
+184,FCUV,Fidelity US Value Index ETF
+185,FF,First Mining Gold Corp
+186,FGB,CI First Asset Shrt Term Govt Bond Indx
+188,FLDM,Franklin Libertyqt Intl Eqt Index ETF
+199,III,Imperial Metals Corp
+201,IPCI,Intellipharmaceutics International Inc
+203,ITP,Intertape Polymer
+204,IAG,Industrial Alliance Ins & Fin Srv Inc
+206,IMV,Imv Inc.
+207,IMO,Imperial Oil
+208,JAG,Jaguar Mining Inc
+209,JE,Just Energy Group Inc
+212,KEY,Keyera Corp
+218,LAC,Lithium Americas Corp
+220,LIFE,Evolve Global Healthcare Enhance Yld ETF
+221,QTRH,Quarterhill Inc
+227,MG,Magna International Inc
+228,MIN,Excelsior Mining Corp
+233,MTL,Mullen Group Ltd
+234,MUS,Mackenzie Max Dvrs US Index ETF
+235,MX,Methanex Corp
+236,MAV,Mav Beauty Brands Inc
+237,MUX,Mcewen Mining Inc
+238,MDNA,Medicenna Therapeutics Corp
+240,MFC,Manulife Fin
+241,MFT,Mackenzie Floating Rate Income ETF
+243,MIND,Horizons Active Ai Global Equity ETF
+244,MPVD,Mountain Province Diamonds Inc
+245,MOGO,Mogo Inc
+247,NML,New Millennium Iron Corp
+249,NEXA,Nexa Resources S.A.
+252,NVCN,Neovasc Inc
+253,NXJ,Nexj Systems Inc
+254,NEPT,Neptune Wellness Solutions Inc
+255,NEXT,Nextsource Materials Inc
+256,NGD,New Gold Inc
+258,OBE,Obsidian Energy Ltd
+259,NXE,Nexgen Energy Ltd
+261,OMI,Orosur Mining Inc
+262,OR,Osisko Gold Royalties Ltd
+264,OGI,Organigram Holdings Inc
+266,OVV,Ovintiv Inc
+269,REAL,Real Matters Inc
+270,RFP,Resolute Forest Products Inc
+271,RQI,RBC Target 2021 Corp Bond Index ETF
+272,RIV,Canopy Rivers Inc
+273,RUBY,RBC US Banks Yield Index ETF CAD
+276,RXD,RBC Quant Emrg Mkts Div Leaders ETF
+279,RIG,RBC Quant Global Infras Leaders ETF
+282,S,Sherritt Intl Rv
+283,SBT,Purpose Silver Bullion ETF
+285,SBI,Serabi Gold Plc
+286,SCU,The Second Cup Ltd
+287,SEA,Seabridge Gold Inc
+289,SES,Secure Energy Services Inc

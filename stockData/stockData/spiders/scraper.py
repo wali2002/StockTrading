@@ -5,6 +5,7 @@ from datetime import datetime
 import os
 import pandas as pd
 from multiprocessing import Process
+import time
 
 
 class ScrapeMarket(scrapy.Spider):
@@ -35,21 +36,21 @@ class ScrapeMarket(scrapy.Spider):
         current_day = now.strftime("%d")
         weekno = datetime.today().weekday()
         print("Current Time =", current_time)
-        self.martketDict = pd.read_csv(self.symbolAvFile, header=None, index_col=0, squeeze=True).to_dict()
+        self.martketDict = pd.read_csv(self.symbolFile, header=None, index_col=0, squeeze=True).to_dict()
         mrktSymbols = list(self.martketDict.keys())
 
-        for symbol in mrktSymbols:
-                urls.append('https://finance.yahoo.com/quote/' + str(symbol))
-        for url in urls:
-                yield scrapy.Request(url=url, callback=self.parseMarket)
+        # for symbol in mrktSymbols:
+        #         urls.append('https://finance.yahoo.com/quote/' + str(symbol))
+        # for url in urls:
+        #         yield scrapy.Request(url=url, callback=self.parseMarket)
 
 
-        if current_day == "20" and current_time == "22:10":
+        if current_day == "21" and current_time == "18:07":
             urls = []
-            for c in ascii_uppercase:
-                urls.append('http://eoddata.com/stocklist/TSX/' + c + '.htm')
-            for url in urls:
-                yield scrapy.Request(url=url, callback=self.parseSymbol)
+            # for c in ascii_uppercase:
+            #     urls.append('http://eoddata.com/stocklist/TSX/' + c + '.htm')
+            # for url in urls:
+            #     yield scrapy.Request(url=url, callback=self.parseSymbol)
             for symbol in mrktSymbols:
                 urls.append('https://finance.yahoo.com/quote/' + str(symbol))
             for url in urls:
@@ -107,20 +108,48 @@ process = CrawlerProcess(settings={
 })
 
 
-def getMin():
-    now = datetime.now()
-    current_time = now.strftime("%M")
-    return current_time
-
 def getTime():
     now = datetime.now()
     current_time = now.strftime("%H:%M")
     return current_time
 
-while True:
-    if int(getMin()) % 2 == 0:
-        p = Process(target=process.crawl(ScrapeMarket))
-        p.start()
-        p.join()
-    elif getTime() == "23:12":
-        break
+
+def getMin():
+    now = datetime.now()
+    current_time = now.strftime("%M")
+    return current_time
+
+
+def getDate():
+    return datetime.now().strftime("%A")
+
+def execute_crawling():
+    process.crawl(ScrapeMarket)
+    process.start()
+
+def getRequiredMarketData():
+    dirname = os.path.dirname(__file__)
+    symbolAvFile = os.path.join(dirname, 'DataOut\mrktSymbols\mrkt_avb_symbols.csv')
+    dataFile = os.path.join(dirname, 'DataOut\weeklyData\mrkt_data.csv')
+    df = pd.read_csv(dataFile)
+    priceData = df['price'] < 20.0
+    df = df[priceData]
+    symList = list(df['symbol'])
+    symDf = pd.read_csv(symbolAvFile)
+    availSym = symDf.symbol.isin(symList)
+    symDf = symDf[availSym]
+    os.remove(symbolAvFile)
+    os.remove(dataFile)
+    symDf.to_csv(symbolAvFile)
+    df.to_csv(dataFile)
+
+
+if __name__ == '__main__':
+    getRequiredMarketData()
+    while True:
+        if int(getMin()) % 1 == 0:
+            p = Process(target=execute_crawling)
+            p.start()
+            p.join()
+            break
+            time.sleep(120.0)
