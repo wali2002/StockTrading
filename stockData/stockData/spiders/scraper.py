@@ -5,7 +5,10 @@ from datetime import datetime
 import os
 import pandas as pd
 from multiprocessing import Process
-import time
+import time,sys
+import stockData.stockData.common.date_util as dt
+from scrapy.utils.log import configure_logging
+import stockData.stockData.processdata.processTrades as pt
 
 dirname = os.path.dirname(__file__)
 symbolAvFile = os.path.join(dirname, 'DataOut\mrktSymbols\mrkt_avb_symbols.csv')
@@ -18,36 +21,33 @@ class ScrapeMarket(scrapy.Spider):
     marketData = {'name':'symbol'}
     martketDict = {}
 
-    def getTime(self):
-        now = datetime.now()
-        current_time = now.strftime("%H:%M")
-        return current_time
-    def getMin(self):
-        now = datetime.now()
-        current_time = now.strftime("%M")
-        return current_time
-    def getDate(self):
-        return datetime.now().strftime("%A")
-
     def start_requests(self):
         urls = []
         now = datetime.now()
-        current_time = now.strftime("%H:%M")
+        current_time = dt.getTime()
         current_day = now.strftime("%d")
         print("Current Time =", current_time)
-        self.martketDict = pd.read_csv(self.symbolFile, header=None, index_col=0, squeeze=True).to_dict()
-        mrktSymbols = list(self.martketDict.keys())
+        try:
+            self.martketDict = pd.read_csv(symbolFile, header=None, index_col=0, squeeze=True).to_dict()
+            self.martketDictAv = pd.read_csv(symbolAvFile, header=None, index_col=0, squeeze=True).to_dict()
 
-        for symbol in mrktSymbols:
+        except:
+            print('market error')
+        mrktSymbols = list(self.martketDict.keys())
+        mrktSymbolsAv = list(self.martketDictAv.keys())
+        time = current_day == "21" and current_time == "18:07"
+        if self.run == "market":
+            for symbol in mrktSymbolsAv:
                 urls.append('https://finance.yahoo.com/quote/' + str(symbol))
-        for url in urls:
+            for url in urls:
                 yield scrapy.Request(url=url, callback=self.parseMarket)
-        if current_day == "21" and current_time == "18:07":
+        elif self.run == "symbol" or time:
             urls = []
             for c in ascii_uppercase:
                 urls.append('http://eoddata.com/stocklist/TSX/' + c + '.htm')
             for url in urls:
                 yield scrapy.Request(url=url, callback=self.parseSymbol)
+        elif self.run == 'real-symbol' or time:
             for symbol in mrktSymbols:
                 urls.append('https://finance.yahoo.com/quote/' + str(symbol))
             for url in urls:
@@ -76,13 +76,18 @@ class ScrapeMarket(scrapy.Spider):
                 f.write("%s,%s\n" % (key, self.marketData[key]))
 
     def parseMarket(self, response):
-        marketValue = response.xpath('//*[@id="quote-header-info"]/div[3]/div[1]/div/span[1]//text()').extract()
-        if len(marketValue) == 1 and float(marketValue[0]) > 0:
-            url = response.url.split("/")
-            symbol = url[len(url) -1]
-            name = self.martketDict[symbol]
-            with open(dataFile, 'a') as f:
-                f.write("{0},{1},{2},{3},{4}\n" .format(str(name),str(symbol),str(marketValue[0]), str(self.getDate()), str(self.getTime())))
+        if response.status != 200:
+            pass
+        if response.status == 200:
+            marketValue = response.xpath('//*[@id="quote-header-info"]/div[3]/div[1]/div/span[1]//text()').extract()
+            if len(marketValue) == 1 and float(marketValue[0]) > 0:
+                url = response.url.split("/")
+                symbol = url[len(url) -1]
+                name = self.martketDict[symbol]
+                tradeProces = getTrade(symbol,name,marketValue[0])
+                tradeProces.addTrade()
+                with open(dataFile, 'a') as f:
+                    f.write("{0},{1},{2},{3},{4},{5},{6}\n" .format(str(name),str(symbol),str(marketValue[0]), str(dt.getDay()), str(dt.getTime()), str(dt.getDate()),str(dt.getMinAndHour())))
     def parseAvailableSym(self, response):
         marketValue = response.xpath('//*[@id="quote-header-info"]/div[3]/div[1]/div/span[1]//text()').extract()
         if len(marketValue) == 1:
@@ -101,8 +106,8 @@ def addHeadersToFile():
             f.write("%s,%s\n" % (symbol, name))
     with open(dataFile, 'a') as f:
         if os.stat(dataFile).st_size == 0:
-            f.write("name,symbol,price,date,time\n")
-    with open(symbolFile, 'w') as f:
+            f.write("name,symbol,price,day,time,date,minute\n")
+    with open(symbolFile, 'a') as f:
         if os.stat(symbolFile).st_size == 0:
             f.write("name,symbol\n")
 
@@ -110,49 +115,69 @@ process = CrawlerProcess(settings={
     "FEEDS": {
         "items.json": {"format": "json"},
     },
+    'LOG_ENABLED': False,
 })
 
 
-def getTime():
-    now = datetime.now()
-    current_time = now.strftime("%H:%M")
-    return current_time
-
-
-def getMin():
-    now = datetime.now()
-    current_time = now.strftime("%M")
-    return current_time
-
-
-def getDate():
-    return datetime.now().strftime("%A")
-
 def execute_crawling():
-    process.crawl(ScrapeMarket)
+    process.crawl(ScrapeMarket, run='market')
     process.start()
+
+def round_down(num, divisor=3):
+    return num - (num%divisor)
+
+def getTrade(symbol, name, marketValue):
+    pt.ProcessTrades(symbol, name, marketValue, str(dt.getDate()), str(dt.getMinAndHour()))
 
 def getRequiredMarketData():
     df = pd.read_csv(dataFile)
-    priceData = df['price'] < 20.0
-    df = df[priceData]
-    symList = list(df['symbol'])
-    symDf = pd.read_csv(symbolAvFile)
-    availSym = symDf.symbol.isin(symList)
-    symDf = symDf[availSym]
-    os.remove(symbolAvFile)
-    os.remove(dataFile)
-    symDf.to_csv(symbolAvFile)
-    df.to_csv(dataFile)
+    if len(df) > 1:
+        priceData = df['price'] < 15.0
+        df = df[priceData]
+        dffil = df['time'].isin(["09:30","09:31","09:32",'09:33','09:34'])
+        firstTrade = df[dffil]
+        avg = df.groupby(['symbol'])['price'].mean().reset_index()
+        symbolsToFilter = []
+        for row in avg.iterrows():
+            for firstRow in firstTrade.iterrows():
+                if row[1]['symbol'] == firstRow[1]['symbol'] and row[1]['price'] == firstRow[1]['price']:
+                    symbolsToFilter.append(row[1]['symbol'])
+        dfFilter = df['symbol'].isin(symbolsToFilter)
+        df = df[~dfFilter]
+        symList = list(df['symbol'])
+        symDf = pd.read_csv(symbolAvFile)
+        availSym = symDf.symbol.isin(symList)
+        symDf = symDf[availSym]
+        df["minute"] = df["minute"].apply(lambda x: round_down(x))
+        os.remove(symbolAvFile)
+        os.remove(dataFile)
+        symDf.to_csv(symbolAvFile,index=False)
+        df.to_csv(dataFile,index=False)
 
 
 def startSpider():
+    configure_logging(install_root_handler=True)
     addHeadersToFile()
-    getRequiredMarketData()
+    run = True
+    print("Trade Started")
     while True:
-        if int(getMin()) % 1 == 0:
+        if dt.getTime() == '12:40' or run:
+            startMin = int(dt.getMin())
+            print("Start: " + str(dt.getFullTime()))
             p = Process(target=execute_crawling)
             p.start()
             p.join()
-            break
-            time.sleep(120.0)
+            endMin = int(dt.getMin())
+            print("End: " + str(dt.getFullTime()))
+            sleeptTime = 180 - (endMin - startMin)
+            if sleeptTime > 0:
+                time.sleep(sleeptTime)
+            run = True
+            getRequiredMarketData()
+        if int(dt.getMinAndHour()) > 1630:
+            getRequiredMarketData()
+            run = False
+    print("Trade Ended at " + getTime())
+    trade = pt.ProcessTrades()
+    trade.clearTrades()
+
